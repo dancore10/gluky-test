@@ -1,6 +1,6 @@
 ### Visit web page for project
 
-Open for gluky_test [https://danielaguirre.000webhostapp.com](https://danielaguirre.000webhostapp.com)
+Open for gluky_test [https://gluky.danielaguirre.me](https://gluky.danielaguirre.me)
 
 My website [https://danielaguirre.me](https://danielaguirre.me)
 
