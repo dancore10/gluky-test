@@ -6,7 +6,10 @@ const TOKEN = "Bearer dPP8uJy1tj9ThP5-laG2svpwXikEruXEz7Uf"
 /*
     * Creación de clase con metodos
 */
-const Request = {
+class Request {
+    constructor() {
+        this.type = "Request"
+    }
 
     getJSON(url){
         return new Promise(function(resolve, reject) {
@@ -26,7 +29,7 @@ const Request = {
                 });
             });
         });
-    },
+    }
 
     postJSON(url, data) {
         return new Promise(function(resolve, reject) {
@@ -52,4 +55,8 @@ const Request = {
     }
 }
 
+// module.exports.Request();
+// module.exports = {
+//     Request
+// }
 export default Request;

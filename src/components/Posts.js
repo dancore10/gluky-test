@@ -2,8 +2,8 @@ import React, {Fragment} from "react";
 import {
     Container, Row, Col,Button
 } from "react-bootstrap";
-import Request from "../utils/Request"
-import Loader from "./Loader"
+import Request from "../utils/Request";
+import Loader from "./Loader";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 export default class Posts extends React.Component {

@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import {
     Container
 } from "react-bootstrap";
-import Request from "../utils/Request"
-import Loader from "./Loader"
+import Request from "../utils/Request";
+import Loader from "./Loader";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 export default class Posts extends React.Component {
@@ -17,7 +17,7 @@ export default class Posts extends React.Component {
     }
 
     photos(){
-        var me = this.state
+        var me = this.state;
         Request.getJSON("/photos?page="+me.page).then((datos)=>{
             this.setState({
                 items: me.items.concat(datos.result),

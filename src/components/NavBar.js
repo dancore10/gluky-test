@@ -12,7 +12,7 @@ const NavBar = () => {
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="gk-navbar fixed-top">
       <Navbar.Brand href="#home">
         <img
-          src="/gluky_logo.png"
+          src="https://gluky.com/assets/images/img_home/up-gluky_logo.png"
           width="100"
           className="d-inline-block align-top"
           alt="Gluky logo"
@@ -29,10 +29,10 @@ const NavBar = () => {
           )}
         </Nav>
         <Nav>
-          <Nav.Link eventKey={1} href="/profile" className="gk-align-top">
+          <Link className="btn btn-light" to="/profile">
             {user && (<img src={user.picture} width="30" className="d-inline-block align-top photo_profile" alt=" profile"/>)}
             {user && (<span className="gk-nickname">{user.nickname}</span>)}
-          </Nav.Link>
+          </Link>
           <Nav.Link eventKey={2} href="#">
             {!isAuthenticated && (<Button variant="success" onClick={() => loginWithRedirect({})}>Log in</Button>)}
             {isAuthenticated && <Button variant="outline-danger" onClick={() => logout()}>Log out</Button>}

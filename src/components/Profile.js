@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { useAuth0 } from "../react-auth0-spa";
 import { Container } from "react-bootstrap";
 import Utils from "../utils/Utils";
-
 const Profile = () => {
 const { loading, user } = useAuth0();
 
